@@ -28,6 +28,7 @@ dev-python/keyring
 dev-ruby/sqlite3
 dev-util/ack
 dev-util/adb
+dev-util/exherbo-dev-tools
 dev-util/glade
 dev-util/meld
 dev-util/the_silver_searcher
