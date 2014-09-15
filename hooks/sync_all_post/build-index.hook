@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+hook_auto_names() {
+    echo sync_all_post
+}
+
+hook_run_sync_all_post() {
+    # disable hook execution while running cave sync with params
+    [[ -n ${CAVE_SYNC_CMDLINE_PARAMS} ]] && return
+    cave generate-metadata
+    /etc/paludis/utils/search-index-diff.rb /var/tmp/paludis/search-index
+}
+
+hook_after_sync_all_post() {
+    echo installable_cache_regen
+}
