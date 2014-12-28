@@ -3,16 +3,13 @@ app-editors/gvim
 app-misc/mc
 app-misc/tree
 app-terminal/tmux
-app-text/zathura
 dev-ruby/sqlite3
 dev-util/ack
-dev-util/meld
 dev-util/the_silver_searcher
 dev-util/tig
 dev-util/valgrind
 fonts/corefonts
 fonts/ubuntu-font-family
-gnome-desktop/gnome-terminal
 net-irc/irssi
 net-misc/aria2
 net-misc/envoy
@@ -25,8 +22,4 @@ x11-apps/xinit
 x11-apps/xprop
 x11-apps/xset
 x11-apps/xsetroot
-x11-misc/dmenu
 x11-server/xorg-server
-x11-themes/gtk-theme-numix
-x11-themes/numix-icon-theme
-x11-wm/i3
