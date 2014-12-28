@@ -7,8 +7,14 @@ hook_auto_names() {
 hook_run_sync_all_post() {
     # disable hook execution while running cave sync with params
     [[ -n ${CAVE_SYNC_CMDLINE_PARAMS} ]] && return
+
+    # pregenerate metadata
     cave generate-metadata
-    /etc/paludis/utils/search-index-diff.rb /var/tmp/paludis/search-index
+
+    # build search index
+    local index="/var/tmp/paludis/search-index"
+    [[ -f $index ]] || cave manage-search-index --create $index
+    /etc/paludis/utils/search-index-diff.rb $index
 }
 
 hook_after_sync_all_post() {
