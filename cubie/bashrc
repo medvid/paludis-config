@@ -1,0 +1,6 @@
+CHOST="armv7-unknown-linux-musleabihf"
+#PATH="/opt/armv7-unknown-linux-musleabihf/bin:$PATH"
+
+armv7_unknown_linux_musleabihf_CFLAGS="-march=armv7-a -mcpu=cortex-a8 -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon -pipe -O2"
+armv7_unknown_linux_musleabihf_CXXFLAGS="-march=armv7-a -mcpu=cortex-a8 -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon -pipe -O2"
+armv7_unknown_linux_musleabihf_LDFLAGS="-Wl,-O1 -Wl,--as-needed -Wl,--gc-sections"

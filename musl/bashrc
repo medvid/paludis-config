@@ -1,0 +1,4 @@
+CHOST="x86_64-pc-linux-musl"
+x86_64_pc_linux_musl_CFLAGS="-march=x86-64 -mtune=generic -O2 -pipe"
+x86_64_pc_linux_musl_CXXFLAGS="-march=x86-64 -mtune=generic -O2 -pipe"
+x86_64_pc_linux_musl_LDFLAGS="-Wl,-O1 -Wl,--as-needed -Wl,--gc-sections"

@@ -1,0 +1,8 @@
+CHOST="aarch64-unknown-linux-musleabi"
+#PATH="/opt/bin:/usr/aarch64-unknown-linux-musleabi/bin:$PATH"
+#PATH="/opt/aarch64-unknown-linux-musleabi/bin:$PATH"
+#LIBRARY_PATH="/usr/aarch64-unknown-linux-musleabi/lib"
+
+aarch64_unknown_linux_musleabi_CFLAGS="-march=armv8-a+crc -mtune=cortex-a53 -O2 -pipe"
+aarch64_unknown_linux_musleabi_CXXFLAGS="-march=armv8-a+crc -mtune=cortex-a53 -O2 -pipe"
+aarch64_unknown_linux_musleabi_LDFLAGS="-Wl,-O1 -Wl,--as-needed -Wl,--gc-sections"
