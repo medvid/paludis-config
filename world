@@ -27,4 +27,5 @@ sys-devel/qt-creator
 sys-fs/bindfs
 sys-process/htop
 virtualization-guest/spice-vdagent
+x11-apps/xdg-user-dirs
 x11-apps/xinit
